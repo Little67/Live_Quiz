@@ -7,4 +7,11 @@ if (!supabaseUrl || !supabaseAnonKey) {
     console.error('Missing Supabase environment variables. Please check .env.local')
 }
 
-export const supabase = createClientComponentClient()
+// Fallback for build time to prevent crash if env vars are missing
+const url = supabaseUrl || 'https://placeholder.supabase.co'
+const key = supabaseAnonKey || 'placeholder-key'
+
+export const supabase = createClientComponentClient({
+    supabaseUrl: url,
+    supabaseKey: key
+})
