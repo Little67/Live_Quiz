@@ -15,7 +15,7 @@ export function Footer() {
 
                 <div className="flex gap-6 items-center">
                     <Link
-                        href="https://github.com"
+                        href="https://github.com/Little67"
                         target="_blank"
                         rel="noreferrer"
                         className="group flex h-9 w-9 items-center justify-center rounded-full border border-input bg-background shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
@@ -24,7 +24,7 @@ export function Footer() {
                         <span className="sr-only">GitHub</span>
                     </Link>
                     <Link
-                        href="https://linkedin.com"
+                        href="https://linkedin.com/in/krutibas-dwibedi"
                         target="_blank"
                         rel="noreferrer"
                         className="group flex h-9 w-9 items-center justify-center rounded-full border border-input bg-background shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
